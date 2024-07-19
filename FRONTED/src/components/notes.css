@@ -1,0 +1,80 @@
+.notespage {
+  padding-top: 80px; /* Ensure content is not hidden behind the navbar */
+  min-height: 100vh; /* Ensure the background covers the entire viewport */
+  background: url('book.jpeg') no-repeat center center fixed;
+  background-size: cover; /* Fit the image without zooming */
+  color: white; /* Ensure text is readable on dark backgrounds */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.notes-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.notes-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-note-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #0056b3;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.add-note-link:hover {
+  background-color: #003d80;
+}
+
+.notes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.notes-table td {
+  padding: 12px;
+  border-bottom: 1px solid #555;
+}
+
+.notes-table tr:last-child td {
+  border-bottom: none;
+}
+
+.notes-table a {
+  color: #66aaff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.notes-table a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .notes-container {
+    padding: 15px;
+  }
+
+  .notes-title {
+    font-size: 24px;
+  }
+
+  .add-note-link {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

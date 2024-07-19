@@ -1,0 +1,108 @@
+/* Apply background image to the entire page with blur effect */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scroll bars */
+}
+
+/* Add a container with a blurred background effect */
+.page-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  z-index: -1; /* Send it behind other content */
+}
+
+/* Full-screen background image */
+.signuppage {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  background: url('closed.jpg') no-repeat center center fixed;
+  background-size: cover; /* Fit the image without zooming */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the container vertically */
+}
+
+/* Styling for the signup container */
+.signup-container {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  width: 100%; /* Smooth transition for hover effect */
+}
+
+/* Move the container up on hover */
+.signup-container:hover {
+  transform: translateY(-10px); /* Adjust the value as needed */
+}
+
+/* Centered title with a larger font size */
+.signup-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Bold labels for form fields */
+.signup-form label {
+  font-weight: bold;
+  color: white;
+}
+
+/* Style for text and password input fields */
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Style for the submit button */
+.signup-form button {
+  width: 100%;
+  background-color: #0056b3;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.signup-form button:hover {
+  background-color: #003d80;
+}
+
+/* Centered paragraph text */
+.signup-form p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Styling for links in the form */
+.signup-form p a {
+  color: #66aaff;
+  text-decoration: none;
+}
+
+/* Link hover effect */
+.signup-form p a:hover {
+  text-decoration: underline;
+}

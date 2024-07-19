@@ -1,0 +1,88 @@
+/* Style for the add-notes page */
+.add-notespage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('book.jpeg'); /* Add your background image path here */
+  background-size: cover;
+  background-position: center;
+}
+
+.add-notes-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.add-notes-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-note-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add-note-button:hover {
+  background-color: #003d80;
+}
+
+.view-notes-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-notes-button a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.view-notes-button a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure the container is responsive */
+@media (max-width: 600px) {
+  .add-notes-container {
+    padding: 15px;
+  }
+
+  .add-notes-container h2 {
+    font-size: 20px;
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+
+  .add-note-button {
+    padding: 8px;
+  }
+
+  .view-notes-button a {
+    font-size: 14px;
+  }
+}
